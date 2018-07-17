@@ -120,8 +120,11 @@ function sendMessage(sender, msg) {
 function appendMessage(sender, msg) {
     let col = $('.col-12');
     col.append(`<div class="message"><div class="message-sender"><div class="message-content"><p><span class="at">@</span>${sender}: ${msg}</p></div></div>`);
-    col.scrollTop(col[0].scrollHeight);
+    $('.conversation').animate({
+        scrollTop: col.height()
+    }, 0);
 }
+
 
 function clearMessages() {
     let col = $('.col-12');
