@@ -7,6 +7,7 @@ $(document).ready(function () {
     socket.on('message', function (res) {
         console.log('sender: ' + res['sender'] + '\nmsg: ' + res['msg']);
         appendMessage(res['sender'], res['msg']);
+
     });
 
     nickname = localStorage.getItem('nickname');
@@ -49,12 +50,12 @@ $('.typing').click(function () {
 $('body').keypress(function () {
     $('#typing').focus();
 });
-
+/*
 
 let typing = false;
 let delay = 2000;
 let timeout;
-
+*/
 $('#typing').keypress(function (e) {
     if (e.which == 13 && nickname != '') {
         sendMessage(getSender(), $('#typing').val());
@@ -119,9 +120,7 @@ function sendMessage(sender, msg) {
 function appendMessage(sender, msg) {
     let col = $('.col-12');
     col.append(`<div class="message"><div class="message-sender"><div class="message-content"><p><span class="at">@</span>${sender}: ${msg}</p></div></div>`);
-    $('.conversation').animate({
-        scrollTop: $('.conversation').height()
-    }, 0);
+    col.scrollTop(col[0].scrollHeight);
 }
 
 function clearMessages() {
