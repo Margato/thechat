@@ -1,0 +1,95 @@
+body {
+    font-size: 1em;
+    font-family: monospace;
+    background: black;
+    color: #c4c4c4;
+    font-family: 'Inconsolata', monospace;
+}
+
+.container {
+    height: 100vh;
+}
+
+.indicator {
+    font-weight: bold;
+    opacity: 0.5;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.conversation {
+    word-break: break-all;
+    width: 100%;
+    background: black;
+    height: calc(100vh - 155px);
+    min-height: calc(100vh - 155px);
+    overflow-y: auto;
+    overflow-x: none;
+}
+
+.at {
+    color: #7db19f;
+}
+
+#someoneistyping {
+    display: none;
+    color: black;
+    padding: 5px;
+    background: #c4c4c4;
+    margin-top: -20px;
+}
+
+.typing {
+    caret-color: white;
+    width: 100%;
+    background: black;
+    height: 130px;
+    min-height: 100px;
+    bottom: 0;
+}
+
+.form-group {
+    height: 90%;
+}
+
+.typingArea {
+    color: #c4c4c4;
+    height: 90%;
+    resize: none;
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: 20px;
+    background: transparent;
+}
+
+.at::first-letter {
+    color: #00ff9d;
+}
+
+.sender {
+    margin: 0;
+    font-weight: bold;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: black;
+    border-radius: 25px;
+}
+
+*::-webkit-scrollbar {
+    width: 1.8px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #c4c4c4;
+    border: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
