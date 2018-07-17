@@ -9,6 +9,9 @@ main.io.on('connection', function (socket) {
 
 
     socket.on('join', function (req) {
+        if (req == null){
+            req = nickname;
+        }
         users.push(id);
         //Broadcast
         main.io.emit('join', req);
