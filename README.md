@@ -6,4 +6,4 @@ The user's nickname is randomly generate on server-side and stored using localSt
  
 It has a lot to improve yet.
 
-# [Demo - Heroku](https://fatidique-saucisson-58813.herokuapp.com) 
+## [Demo - Heroku](https://fatidique-saucisson-58813.herokuapp.com) 
