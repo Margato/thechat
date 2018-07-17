@@ -21,7 +21,10 @@ $(document).ready(function () {
     socket.emit('join', nickname);
 
     socket.on('join', function (res) {
-        appendMessage('console', `${res} has joined The Chat.`);
+        if (res != null)
+            appendMessage('console', `${res} has joined The Chat.`);
+        else
+            appendMessage('console', `A new user has joined The Chat.`);
     });
 
     socket.on('quit', function (res) {
@@ -29,9 +32,9 @@ $(document).ready(function () {
     });
 
     socket.on('usersOnline', function (res) {
-        if (res == 1){
+        if (res == 1) {
             appendMessage('console', `You are alone in this chat :(`);
-        }else{
+        } else {
             appendMessage('console', `${res} users are online`);
         }
     });
