@@ -17,8 +17,14 @@ body {
     position: absolute;
 }
 
+.message{
+
+}
+
+
+
 .conversation {
-    word-break: break-all;
+    word-break: keep-all;
     width: 100%;
     background: black;
     height: calc(100vh - 155px);
