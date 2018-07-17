@@ -21,7 +21,7 @@ $(document).ready(function () {
     socket.emit('join', nickname);
 
     socket.on('join', function (res) {
-        if (res != null)
+        if (res != 'null')
             appendMessage('console', `${res} has joined The Chat.`);
         else
             appendMessage('console', `A new user has joined The Chat.`);
