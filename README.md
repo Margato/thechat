@@ -7,3 +7,5 @@ The user's nickname is randomly generate on server-side and stored using localSt
 It has a lot to improve yet.
 
 ## [Demo - Heroku](https://margato-thechat.herokuapp.com) 
+## Screenshot
+![The Chat on iPhone 5](https://i.imgur.com/fYzKT9a.png?1)
