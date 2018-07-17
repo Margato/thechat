@@ -36,6 +36,8 @@ $(document).ready(function () {
     });
 
     appendMessage('console', 'Welcome to The Chat! Here you can talk of everything with everyone. Created with ♥ by Margato#9907.');
+    
+    appendMessage('console', 'Check out this repo at <a href="https://github.com/Margato/thechat">GitHub</a>');
 
     appendMessage('console', 'You can change your display name typing /nickname <new nickname>');
 });
